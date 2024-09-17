@@ -1,6 +1,16 @@
 import Image from "next/image"
 
-export const Card= ()=>{
+export const Card= ({
+    title,
+    imgDescription,
+    imgAlt,
+    imgSrc
+}:{
+    title:string;
+    imgDescription:string;
+    imgAlt:string;
+    imgSrc:string;
+})=>{
     return(
         <div className="max-w-sm border-gray-100 border-2">
             <div>
