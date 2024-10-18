@@ -1,4 +1,5 @@
 import { Card } from "@/components/Card";
+import Hero from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import Image from "next/image";
 
@@ -31,7 +32,8 @@ export default function Home() {
   return (
     <div>
      <Navbar></Navbar>
-     <div>
+     <Hero></Hero>
+     <div className="flex flex-row justify-between items-center container mx-auto">
       {card_attribute.map(({id, title,imgDescription,imgAlt,imgSrc})=>(
         <Card
         title={title}

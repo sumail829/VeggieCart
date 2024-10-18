@@ -12,7 +12,7 @@ export const Card= ({
     imgSrc:string;
 })=>{
     return(
-        <div className="max-w-sm border-gray-100 border-2">
+        <div className="relative max-w-sm border-gray-100 border-2">
             <div>
                 <Image
                 src={"/test.jpg"}
@@ -25,7 +25,7 @@ export const Card= ({
             </div>
             <div className="px-4 py-6">
              <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <div className="text-gray-700 text-base">
+              <div className="text-gray-700 text-base dark:text-white">
                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
               </div>
             </div>

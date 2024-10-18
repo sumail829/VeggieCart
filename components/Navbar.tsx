@@ -9,6 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { BsMenuButton } from "react-icons/bs";
+import ThemeSwitcher from "./ui/ThemeSwitcher";
 
 
 export const Navbar =()=> {
@@ -59,7 +60,7 @@ export const Navbar =()=> {
         <span  
         className="flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-gray-600 dark:text-white"><CiSearch /></span>
       </div>
-      
+      <div>  <ThemeSwitcher></ThemeSwitcher></div>
       
       </div>
     </nav>
