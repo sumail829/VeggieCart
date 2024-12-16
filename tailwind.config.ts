@@ -18,6 +18,16 @@ const config: Config = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
+		  borderWidth: {
+			DEFAULT: '1px',
+			'1':'1px',
+			'0': '0',
+			'2': '2px',
+			'3': '3px',
+			'4': '4px',
+			'6': '6px',
+			'8': '8px',
+		  },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { CiSearch } from "react-icons/ci";
 import {
@@ -10,6 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { BsMenuButton } from "react-icons/bs";
 import ThemeSwitcher from "./ui/ThemeSwitcher";
+import Search from "./Search";
 
 
 export const Navbar =()=> {
@@ -50,14 +52,9 @@ export const Navbar =()=> {
         <div className=" font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500">Services</div>
         <div className=" font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500">Contact us</div>
       </div>
-      <div className="ms-5 flex w-[30%] items-center justify-between">
-      <input
-        type="search"
-        className="relative m-0 block w-[1px] min-w-0 flex-auto rounded border border-sodivd border-secondary-500 bg-transparent bg-cdivp-padding px-3 py-1.5 text-base font-normal text-surface transition duration-300 ease-in-out focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outdivne-none motion-reduce:transition-none dark:border-white/10 dark:bg-body-dark dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill"
-        placeholder="Search"
-        aria-label="Search"
-        aria-describedby="button-addon2" />
-        <span  
+      <div className="ms-5 flex w-[30%] items-center justify-between border-1 border-gray-100 dark:border-0">
+        <Search></Search>
+        <span   
         className="flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-gray-600 dark:text-white"><CiSearch /></span>
       </div>
       <div>  <ThemeSwitcher></ThemeSwitcher></div>
